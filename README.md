@@ -4,7 +4,8 @@
   本项目中如出现侵权内容，请联系作者删除！（E-MAIL:hello2022_jzc@yeah.net，TEL:13103166175）  
 
 # 项目介绍：
-  本项目基于python3.10+，使用mitmproxy拦包改包，修改答案，配合adb连续点击，以实现自动答题。
+  本项目基于python3.10+，使用mitmproxy拦包改包，修改答案，配合adb连续点击，以实现自动答题。  
+  该项目致力于让所有人轻松使用该项目，并欢迎能力出众的人提交自己的想法，如果喜欢该项目，请给个star支持一下～  
 
 # 目录结构：
     XiaoYuanKouSuan  
@@ -39,6 +40,10 @@
             |  
             |--pk\..*\.css // pk页面的样式文件  
     |--pic // 介绍图片的目录
+    |
+    |--tutorial // 教程目录
+    |
+    |--annex // 附录，其中包含了项目所需的安装包等依赖文件，如有侵权，请联系作者删除！
 
 # 项目要求：
   1.拥有一台可以安装adb命令和python3.10+的电脑（作者使用的是Ubuntu24测试）  
@@ -46,4 +51,14 @@
   3.已经root的手机或模拟器，并且已经解锁了system分区（作者使用的是安装LineageOS20的小米8se）  
 
 # 使用教程：
-  [跳转至教程](tutorial/README.md)
+## 1.下载该项目压缩包并解压缩
+## 2.为root的手机或模拟器安装mitmproxy证书（将证书通过hash转码以后安装到手机的/system/etc/security/cacerts 目录下）
+## 3.清除手机或模拟器中小猿口算的缓存
+## 4.启动mitmproxy，进入XiaoYuanKouSuan目录，在终端中输入命令：
+    mitmdump -s ./main.py  
+  [详细教程](/tutorial/README.md)
+
+# 联合开发：
+  该项目欢迎大家参与，如果大家有更好的想法，欢迎大家提出贡献，作者会及时合并处理  
+  ## E-MAIL:
+  hello2022_jzc@yeah.net  
