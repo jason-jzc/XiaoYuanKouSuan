@@ -11,6 +11,8 @@
   >>[windows平台](/annex/platform-tools-latest-windows.zip)  
   >>[linux平台](/annex/platform-tools-latest-linux.zip)  
   >>[macOS平台](/annex/platform-tools-latest-darwin.zip)  
+  >## Magisk安装包：
+  >>[magisk-v28](/annex/Magisk-v28.apk)  
 
 # 联合开发：
   该项目欢迎大家参与，如果大家有更好的想法，欢迎大家提出贡献，作者会及时合并处理   
