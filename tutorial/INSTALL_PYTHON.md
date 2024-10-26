@@ -4,10 +4,13 @@
 # 在Ubuntu上安装python3.10+
 
   ## 1.更新源：
+  ```bash
     sudo apt update
-
+  ```
   ## 2.安装python3.10+：
+  ```bash
     sudo apt install python3
+  ```
 
 # 在Windows上安装python3.10+（仅供参考，作者未测试windows平台）:
 
