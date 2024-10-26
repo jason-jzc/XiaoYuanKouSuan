@@ -1,12 +1,12 @@
 # 教程目录
->|--tutorial  
->>|--[INSTALL_PYTHON.md](/tutorial/INSTALL_PYTHON.md)  // python安装教程  
->>|--[INSTALL_MITMPROXY.md](/tutorial/INSTALL_MITMPROXY.md)  // mitmproxy安装教程  
->>|--[INSTALL_ADB.md](/tutorial/INSTALL_ADB.md)  // adb安装教程  
->>|--[GETROOT.md](/tutorial/GETROOT.md)  // root教程  
->>|--[INSTALL_MITMPROXY_CA.md](/tutorial/INSTALL_MITMPROXY_CA.md)  // mitmproxy证书安装教程  
->>>|--SomeQuestions
->>>>|--[SSL_WARNING.md](/tutorial/SomeQuestions/SSL_WARNING.md)  // SSL握手失败/提示无法上网  
+>tutorial  
+>>[INSTALL_PYTHON.md](/tutorial/INSTALL_PYTHON.md)  // python安装教程  
+>>[INSTALL_MITMPROXY.md](/tutorial/INSTALL_MITMPROXY.md)  // mitmproxy安装教程  
+>>[INSTALL_ADB.md](/tutorial/INSTALL_ADB.md)  // adb安装教程  
+>>[GETROOT.md](/tutorial/GETROOT.md)  // root教程  
+>>[INSTALL_MITMPROXY_CA.md](/tutorial/INSTALL_MITMPROXY_CA.md)  // mitmproxy证书安装教程  
+>>>SomeQuestions
+>>>>[SSL_WARNING.md](/tutorial/SomeQuestions/SSL_WARNING.md)  // SSL握手失败/提示无法上网  
   #### 步骤：
   1.安装python3.10+（作者使用的是python3.12.0）  
   2.安装mitmproxy  
@@ -23,4 +23,3 @@
   该文件中的SomeQuestions为作者遇到的一些问题，欢迎提出新的问题  
   ## E-MAIL:
     hello2022_jzc@yeah.net 
-    
