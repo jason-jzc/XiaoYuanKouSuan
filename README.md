@@ -51,10 +51,10 @@
   3.已经root的手机或模拟器，并且已经解锁了system分区（作者使用的是安装LineageOS20的小米8se）  
 
 # 使用教程：
-## 1.下载该项目压缩包并解压缩
-## 2.为root的手机或模拟器安装mitmproxy证书（将证书通过hash转码以后安装到手机的/system/etc/security/cacerts 目录下）
-## 3.清除手机或模拟器中小猿口算的缓存
-## 4.启动mitmproxy，进入XiaoYuanKouSuan目录，在终端中输入命令：
+#### 1.下载该项目压缩包并解压缩
+#### 2.为root的手机或模拟器安装mitmproxy证书（将证书通过hash转码以后安装到手机的/system/etc/security/cacerts 目录下）
+#### 3.清除手机或模拟器中小猿口算的缓存
+#### 4.启动mitmproxy，进入XiaoYuanKouSuan目录，在终端中输入命令：
     mitmdump -s ./main.py  
   [详细教程](/tutorial/README.md)
 
