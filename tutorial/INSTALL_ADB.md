@@ -14,8 +14,8 @@
   ```bash
   sudo adb start-server
   ```  
-  当看见如下信息时，说明adb安装成功
-  ![image](/pic/adb_startserver.png)
+  当看见如下信息时，说明adb安装成功  
+  ![image](/pic/adb_startserver.png)  
 
 # 适用于所有GNU/Linux中的ADB安装方法：
 ## 1.下载Google提供的ADB包：

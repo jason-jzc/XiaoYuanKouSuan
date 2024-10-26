@@ -8,6 +8,6 @@
   >>[ARM64_windows平台可执行文件](/annex/python-3.13.0-arm64.exe)  
   >>[MacOS平台安装包](/annex/python3.13.0-macos11.pkg)  
   >## platform-tools包：
-  >>[windows平台](/annex/platform-tools-latest-windows.zip)
-  >>[linux平台](/annex/platform-tools-latest-linux.zip)
-  >>[macOS平台](/annex/platform-tools-latest-darwin.zip)
+  >>[windows平台](/annex/platform-tools-latest-windows.zip)  
+  >>[linux平台](/annex/platform-tools-latest-linux.zip)  
+  >>[macOS平台](/annex/platform-tools-latest-darwin.zip)  
