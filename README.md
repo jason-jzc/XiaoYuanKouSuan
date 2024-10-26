@@ -55,10 +55,14 @@
 #### 2.为root的手机或模拟器安装mitmproxy证书（将证书通过hash转码以后安装到手机的/system/etc/security/cacerts 目录下）
 #### 3.清除手机或模拟器中小猿口算的缓存
 #### 4.启动mitmproxy，进入XiaoYuanKouSuan目录，在终端中输入命令：
+  ```bash
     mitmdump -s ./main.py  
+  ```  
   [详细教程](/tutorial/README.md)
 
 # 联合开发：
   该项目欢迎大家参与，如果大家有更好的想法，欢迎大家提出贡献，作者会及时合并处理  
   ## E-MAIL:
   hello2022_jzc@yeah.net  
+  ## 贡献者：
+  * [jason-jzc](https://github.com/jason-jzc)
