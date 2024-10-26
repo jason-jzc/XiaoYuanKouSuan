@@ -4,7 +4,6 @@
 # 文件列表：
   >## python3.13包：
   >>[x86_64_windows平台可执行文件](/annex/python-3.13.0-amd64.exe)  
-  >><a href="/annex/python-3.13.0-amd64.exe">x86_64_windows平台可执行文件</a><br>
   >>[x86_windows平台可执行文件](/annex/python-3.13.0.exe)  
   >>[ARM64_windows平台可执行文件](/annex/python-3.13.0-arm64.exe)  
   >>[MacOS平台安装包](/annex/python3.13.0-macos11.pkg)  
