@@ -26608,7 +26608,7 @@
 					class: {
 						"go-out": r.startExercise
 					}
-				}, [t._v(" " + t._s(r.nickName + "（我）") + " "), e("div", {
+				}, [t._v(" " + t._s(r.nickName + "（Powered By JASON!）") + " "), e("div", { // 署名彩蛋～
 					staticClass: "extra"
 				}, [t._v(" " + t._s(r.meVictoryGround) + " ")])]), r.showTarget ? e("img", {
 					staticClass: "center-icon",
@@ -26661,7 +26661,7 @@
 						T = (0, i.computed)((function() {
 							if (y.value) {
 								var t = new Array(A.value);
-								return "寻找大冤种." + t.fill(".").join("")
+								return "寻找大冤种." + t.fill(".").join("") //小彩蛋～
 							}
 							var e;
 							return (null === (e = l.value) || void 0 === e || null === (e = e.otherUser) || void 0 === e ? void 0 : e.userName) || "小猿同学"
