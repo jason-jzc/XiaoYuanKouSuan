@@ -24502,7 +24502,7 @@
 							s.value[i].answer = "1"
 							s.value[i].answers = ["1"]
 						}
-						alert(JSON.stringify(s.value))
+						// alert(JSON.stringify(s.value))
 						// ================================
 
 						var u = gs(),
@@ -24561,18 +24561,6 @@
 						_ = function() {
 							g.value = !0
 						};
-					
-					// 将答案改回正确答案（修改提交数据）
-					var backAnswer = function(s_data){
-						for (let i = 0; i < s_data.value.length; i++) {
-							s_data.value[i].answer = memory_answer[i];
-							s_data.value[i].answers = [memory_answer[i]]
-						}
-						alert(JSON.stringify(s_data))
-						return s_data
-					}
-					// ============================
-
 					return (0, i.watch)((0, i.computed)((function() {
 						return n.jumpToNext
 					})), (function() {

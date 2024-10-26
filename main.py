@@ -65,7 +65,7 @@ class adb_manager:
         """
         self._auto_click_answer_run = True
 
-    def closeTheard(self, function: str):
+    def closeThread(self, function: str):
         """
         关闭指定的线程。
 
@@ -139,14 +139,14 @@ class ResponseHandler:
                 flow.response.content = self.replaceZIP()
             case 4:
                 # 开启连点器
-                auto_click_answer_theard = threading.Thread(target=adb.auto_click_answer)
-                auto_click_answer_theard.start()
+                auto_click_answer_thread = threading.Thread(target=adb.auto_click_answer)
+                auto_click_answer_thread.start()
                 # pass
             case 5:
                 # 关闭连点器并自动点击继续按键
-                adb.closeTheard("auto_click_answer")
-                auto_click_conntinue_theard = threading.Thread(target=adb.auto_click_continue)
-                auto_click_conntinue_theard.start()
+                adb.closeThread("auto_click_answer")
+                auto_click_conntinue_thread = threading.Thread(target=adb.auto_click_continue)
+                auto_click_conntinue_thread.start()
                 # pass
 
     def replaceZIP(self):
