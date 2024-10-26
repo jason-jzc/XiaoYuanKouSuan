@@ -23,7 +23,7 @@
   ```bash
   adb devices
   ```
-  如果返回类似如下的信息，则表示连接成功：
+  如果返回类似如下的信息，则表示连接成功：<br>
   ![image](/pic/adb_devices.png)<br>
 
 ## 1.获取boot镜像：
@@ -44,14 +44,14 @@
   部分系统可能需要在手机/虚拟机上确认安装<br>
 ## 3.修补boot.img:
   打开Magisk（如下图）<br>
-  ![image](/pic/Magisk_main_page.png)<br>
+  ![image](/pic/Magisk_main_page.png)<br><br>
   点击“安装”按键（如下图）<br>
-  ![image](/pic/Magisk_install_page.png)<br>
+  ![image](/pic/Magisk_install_page.png)<br><br>
   绝大多数系统没有“直接安装”这一选项，如果有，选择“直接安装”即可，如果没有，请选择“选择并修补一个文件”（如下图）<br>
-  ![image](/pic/Magisk_chosen_file.png)<br>
+  ![image](/pic/Magisk_chosen_file.png)<br><br>
   找到boot.img文件，然后点击“开始”即可<br>
   等待修补完成，可以看到如下图<br>
-  ![image](/pic/Magisk_patch_done.png)<br>
+  ![image](/pic/Magisk_patch_done.png)<br><br>
   记住输出的路径，并在电脑上输入如下命令：
   ```bash
   adb pull /sdcard/Download/patched-boot.img
@@ -70,6 +70,7 @@
   ```bash
   fastboot reboot
   ```
+  如果正常重启，则root权限获取成功！<br>
 
 [下一步](/tutorial/INSTALL_MITMPROXY_CA.md)  
 

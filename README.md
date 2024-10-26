@@ -60,6 +60,9 @@
   ```  
   [详细教程](/tutorial/README.md)
 
+# 展示视频：
+![SampleVideo](/pic/ShowVideo.mp4)
+
 # 联合开发：
   该项目欢迎大家参与，如果大家有更好的想法，欢迎大家提出贡献，作者会及时合并处理   
   >## E-MAIL:
