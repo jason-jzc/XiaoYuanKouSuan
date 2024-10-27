@@ -161,7 +161,7 @@
   然后在MT管理器中，轻滑左侧目录，点击上面的路径，输入‘/sdcard’，即可进入手机的/sdcard目录<br>
   然后轻滑右侧目录，点击上面的路径，输入‘/system/etc/security/cacerts’，即可进入手机的/system/etc/security/cacerts目录<br>
   然后长按左侧目录中转码后的证书文件，在弹出的菜单中（如下图），选择 ‘复制->’：<br>
-  ![image](/pic/copy_ca_png)<br>
+  ![image](/pic/copy_ca.png)<br>
   此时右侧刚刚复制过去的证书文件将会是绿色的字体，长按复制过去的文件，在弹出的菜单中选择‘属性’，此时你将看到该文件的属性细节（如下图）<br>
   ![image](/pic/detail_ca.png)<br>
   如果权限、所有者和用户组图像中不同，则改为与图示相同<br>
@@ -170,7 +170,7 @@
 
 ### 3.3 验证证书安装是否成功：
   打开手机设置，找到“安全”，找到“更多安全设置”，选择“加密与凭据”，进入“信任的凭据”，选择“系统”，向下滑动，找到“mitmproxy”，检查是否开启（如下图），如果未开启，请手动开启<br>
-  ![image](/pic/check_install.png)<br>
+  ![image](/pic/check_installed.png)<br>
 
 <br>
 <br>
