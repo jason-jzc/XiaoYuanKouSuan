@@ -58,10 +58,14 @@
   ```bash
     mitmdump -s ./main.py  
   ```  
-  [详细教程](/tutorial/README.md)
+  [详细教程](/tutorial/README.md)<br>
 
 # 展示视频：
-![SampleVideo](/pic/ShowVideo.mp4)
+![SampleVideo](/pic/ShowVideo.gif)
+
+# 已知问题（未解决）：
+  > 服务端更新反作弊系统，有时会被封号
+  > 30题最快速度仅为0.5s，动画无法跳过
 
 # 联合开发：
   该项目欢迎大家参与，如果大家有更好的想法，欢迎大家提出贡献，作者会及时合并处理   
