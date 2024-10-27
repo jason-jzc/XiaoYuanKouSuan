@@ -13,6 +13,16 @@
   >>[macOS平台](/annex/platform-tools-latest-darwin.zip)  
   >## Magisk安装包：
   >>[magisk-v28](/annex/Magisk-v28.apk)  
+  >## 原始根证书文件：
+  >>[root_X0F](/annex/root_X0F.crt)
+  >>[CAcert_Class3Root](/annex/CAcert_Class3Root_x14E228.crt)
+  >## hash转码后的根证书：
+  >>[5ed36f99.0](/annex/5ed36f99.0)
+  >>[e5662767.0](/annex/e5662767.0)
+  >## Magisk模块：
+  >>[magisk-overlayfs](/annex/magisk-overlayfs-release.zip)
+  >## MT管理器：
+  >>[MTManager](/annex/MT2.16.7.apk)
 
 # 联合开发：
   该项目欢迎大家参与，如果大家有更好的想法，欢迎大家提出贡献，作者会及时合并处理   
