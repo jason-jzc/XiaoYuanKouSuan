@@ -14,7 +14,7 @@
   前往[证书网站](https://www.cacert.org/index.php?id=3)，你将会看见如下图所示的界面：<br>
   ![image](/pic/CA_mainpage.png)<br><br>
   下载Class1和Class3的PEM格式的证书（下载DER格式的也可以，就是接下来的步骤会有一定的不同）<br>
-  你将会得到如下的两个文件：
+  你将会得到如下的两个文件：<br>
   ![image](/pic/rootCA1.png) ![image](/pic/rootCA2.png)<br>
 ### 1.2.将证书转为hash格式：
   在终端中进入下载根证书的目录，并执行如下命令：
