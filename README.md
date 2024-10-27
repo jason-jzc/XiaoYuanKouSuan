@@ -62,7 +62,7 @@
   ```  
   [详细教程](/tutorial/README.md)<br>
 
-# 展示视
+# 展示视频：
 ![SampleVideo](/pic/ShowVideo.gif)
 
 # 已知问题（未解决）：

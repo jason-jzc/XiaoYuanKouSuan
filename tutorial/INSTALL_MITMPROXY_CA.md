@@ -15,14 +15,14 @@
   ![image](/pic/CA_mainpage.png)<br><br>
   下载Class1和Class3的PEM格式的证书（下载DER格式的也可以，就是接下来的步骤会有一定的不同）<br>
   你将会得到如下的两个文件：
-  ![image](/pic/rootCA1) ![image](/pic/rootCA2)<br>
+  ![image](/pic/rootCA1.png) ![image](/pic/rootCA2.png)<br>
 ### 1.2.将证书转为hash格式：
   在终端中进入下载根证书的目录，并执行如下命令：
   ```bash
   openssl x509 -inform PEM -subject_hash_old -in root_X0F.crt | head -1
   ```
   你将会获得一串hash值，如下图<br>
-  ![image](/pic/openssl_hash1)<br>
+  ![image](/pic/openssl_hash1.png)<br>
   请复制该hash值，如果不出意外，你的hash值应该与我相同。<br><br>
   >[!NOTE]
   >该命令中‘PEM’参数代表证书格式，正如我在[1.1章节](###1.1.下载安卓根证书：)中提到的，如果你下载的是DER格式的证书，请将该参数修改为‘DER’。<br>
@@ -30,7 +30,7 @@
   <br><br>
 
   然后在当前目录下创建一个以上述hash值加‘.0’（点零），的文本文档（如下图）。<br>
-  ![image](/pic/openssl_hash2)<br>
+  ![image](/pic/openssl_hash2.png)<br>
   然后以文本文档打开’root_X0F.crt‘，复制其中的所有内容到hash值加‘.0’（点零）的文本文件中。<br>
   >[!TIP]
   >GNU/Linux系统用户可以直接使用命令：<br>
