@@ -11,6 +11,8 @@
   我的[附件](/annex/README.md)中存放了已经通过hash转码的证书文件，如果你不是为了学习一些技能，可以直接下载，跳过‘下载安卓根证书并安装’这一步骤，直接进入下一步[‘获取并安装mitmproxy证书’](##2.获取并安装mitmproxy证书)<br>
   接下来的操作需要openssl，如果电脑中没有openssl，请自行搜索如何安装openssl（通常GNU/Linux和MacOS自带）
 ### 1.1.下载安卓根证书：
+  <a name="download_ca"></a>
+
   前往[证书网站](https://www.cacert.org/index.php?id=3)，你将会看见如下图所示的界面：<br>
   ![image](/pic/CA_mainpage.png)<br><br>
   下载Class1和Class3的PEM格式的证书（下载DER格式的也可以，就是接下来的步骤会有一定的不同）<br>
@@ -25,7 +27,7 @@
   ![image](/pic/openssl_hash1.png)<br>
   请复制该hash值，如果不出意外，你的hash值应该与我相同。<br><br>
   >[!NOTE]
-  >该命令中‘PEM’参数代表证书格式，正如我在[1.1章节](###1.1.下载安卓根证书：)中提到的，如果你下载的是DER格式的证书，请将该参数修改为‘DER’。<br>
+  >该命令中‘PEM’参数代表证书格式，正如我在[1.1章节](#download_ca)中提到的，如果你下载的是DER格式的证书，请将该参数修改为‘DER’。<br>
   >其中'root_X0F.crt'为证书的名称，下文中出现类似'证书名称'的文字，均修改该文件名。
   <br><br>
 
@@ -42,16 +44,37 @@
   openssl x509 -inform PEM -text -in root_X0F.crt -noout >> 5ed36f99.0
   ```
   >[!NOTE]
-  >该命令中‘PEM’参数代表证书格式，正如我在[1.1章节](###1.1.下载安卓根证书：)中提到的，如果你下载的是DER格式的证书，请将该参数修改为‘DER’。<br>
+  >该命令中‘PEM’参数代表证书格式，正如我在[1.1章节](#download_ca)中提到的，如果你下载的是DER格式的证书，请将该参数修改为‘DER’。<br>
 
   然后请对另一个根文件重复执行如上步骤，并将证书名称改为另一个证书的名称。<br>
   如果不出意外，你将会获得类似如下的文件，并且hash值与我相同<br>
   ![image](/pic/openssl_hash3.png)<br>
   将这两个转码后的文件保留备用<br>
 
-
-
 ## 2.获取并hash转码mitmproxy证书：
+### 2.1.获取证书
+  在命令行中输入以下命令，用于获取证书：<br>
+  ```bash
+  mitdump
+  ```
+  此时你可能还是找不到证书，因为mitmproxy将证书放到了你的用户目录下，它有可能是一个隐藏文件夹。<br>
+  如果是GNU/Linux或MacOS系统，隐藏目录通常在 ~/ 目录下，名为 .mitmproxy 的文件夹。<br>
+  在Windows系统中，可以通过文件管理器搜索 .mitmproxy 来查找该文件夹。<br>
+
+  >[!TIP]
+  >如果真的找不到，可以设置电脑的代理为127.0.0.1端口8080（如何设置请自行搜索），然后打开浏览器输入mitm.it，你将会看见证书的下载界面，下载安卓的证书文件。（作者未尝试，无法确认是否可行，详细教程请参考[官方文档](https://docs.mitmproxy.org/stable/concepts-certificates/)）
+  <br><br>
+
+  打开文件夹你将看见如下文件：<br>
+  ![image](/pic/mitmproxy_ca_list.png)<br>
+  那么恭喜你，可以距成功又近一步了<br>
+
+### 2.2.hash转码证书：
+  终端打开 .mitmproxy 文件夹，输入如下命令：<br>
+  ```bash
+  openssl x509 -inform PEM -subject_hash_old -in mitmproxy-ca.pem | head -1
+  ```
+  同样的
 ## 3.安装证书：
 
 
