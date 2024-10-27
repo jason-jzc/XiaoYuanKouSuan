@@ -5,11 +5,14 @@ import queue
 import threading
 import zipfile
 import os
+import sys
 # import json
 import adbManager
 
-# 定义文件路径、包名和文件名常量
-filePath = "/home/jason/文档/软件设计/XiaoYuanKouSuan/"
+# 定义文件路径
+filePath = "" # 解压缩文件夹路径（请自行修改）
+
+# 定义包名和文件名常量
 PackageName = "replacePackage.zip"
 fileName = "bao/"
 

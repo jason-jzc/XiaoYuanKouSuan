@@ -8,7 +8,7 @@
 >>>-SomeQuestions
 >>>>-[SSL_WARNING.md](/tutorial/SomeQuestions/SSL_WARNING.md)  // SSL握手失败/提示无法上网  
   #### 步骤：
-  1.安装python3.10+（作者使用的是python3.12.0）  
+  1.安装python3.10+（作者使用的是python3.12）  
   2.安装mitmproxy  
   3.安装adb命令  
   4.获取手机或模拟器的root权限  
